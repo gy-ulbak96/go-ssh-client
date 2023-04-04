@@ -88,16 +88,16 @@ func (S *SSH) Close() {
 	S.client.Close()
 }
 
-func main() {
-	client := &SSH{
-		IP:   "Your-Server-IP",
-		User: "Your-Server-User",
-		Port: 22,
-		Cert: "Your-Password-or-Key-Path",
-	}
-	client.Connect(CertPublicKeyFile)
-	client.RunCmd("whoami")
-	client.Close()
-}
+// func main() {
+// 	client := &SSH{
+// 		IP:   "Your-Server-IP",
+// 		User: "Your-Server-User",
+// 		Port: 22,
+// 		Cert: "Your-Password-or-Key-Path",
+// 	}
+// 	client.Connect(CertPublicKeyFile)
+// 	client.RunCmd("whoami")
+// 	client.Close()
+// }
 
 
